@@ -1,2 +1,1 @@
-# HEAM-app
-An educational tool
+HEAM(Handy Educational Assistance Manager)
