@@ -19,19 +19,34 @@
   </style>
 </head>
 <body>
-
-  <div class="header jumbotron" style="background-color: #00B6AB;">
-    <h1 id="topTitleBar" class="display-1">HEAM</h1>
+  <!--<iframe src="List.html" height="500" width="500"></iframe>-->
+<div class="jumbotron jumbotron-fluid" style="background-color: #00B6AB;">
+  <div class="container">
+    <h1 id="topTitleBar" class="display-3">HEAM</h1>
     <h2 id="userNameDisplay" style="text-align: center;"><!--Leave This Area Empty--></h2>
   </div>
+</div>
+
+<!--Pane Containing News-->
+<div class="card" style="border-radius: 0 !important;">
+    <div class="card-body">
+      <h4 class="card-title" style="text-align: center;">NEWS</h4>
+      <p class="card-text" style="text-align: center;">HEAM Is Still In Developemt As Of 2018-10-10</p>
+    </div>
+  </div>
+<!--Buttons Redirecting To Certain features In App-->
+<button type="button" class="btn btn-primary btn-block" style="border-radius: 0 !important;" onclick="location.href='https://teamnightowl.ca/HEAM-APP/List.html'">Open Lists</button>
+
 <script>
-let userName = prompt("What Is Your Name?: ")
-if(userName != ""){
-  document.getElementById("userNameDisplay").innerText = "Welcome, "  + userName;
+
+let userName = prompt("What Is Your Name?: ");
+if(userName != null){
+  document.getElementById("userNameDisplay").innerHTML = "Welcome, " + userName;
 }
 else{
-  document.getElementById("userNameDisplay").innerText = "Welcome!";
+  document.getElementById("userNameDisplay").innerHTML = "Welcome, User!";
 }
+
 </script>
 </body>
 </html>
